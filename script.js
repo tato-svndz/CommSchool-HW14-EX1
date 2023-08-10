@@ -3,7 +3,7 @@ function isPrime(n) {
         return false;
     } else {
         for (let i=2; i < n; i++) {
-            if(number % i === 0) {
+            if(n % i === 0) {
                 return false;
             }
         }
@@ -21,6 +21,6 @@ function showPrimes(number) {
     return primeNumbers;  
     }
 
-let num = prompt('Enter a Number:')
-
-alert(showPrimes(num));
+let num = prompt('Enter a Number:');
+let result = showPrimes(num);
+alert(result);
